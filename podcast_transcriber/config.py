@@ -1,0 +1,9 @@
+HF_TOKEN = "DEIN_HUGGINGFACE_TOKEN"
+
+WHISPER_MODEL = "large-v3"
+
+LANGUAGE = "de"
+
+INPUT_FOLDER = "input"
+
+OUTPUT_FOLDER = "output"
