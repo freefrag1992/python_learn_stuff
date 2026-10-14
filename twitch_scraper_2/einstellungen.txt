@@ -1,0 +1,25 @@
+# Einstellungen für den Twitch Code Finder
+# Diese Datei wird vom Programm automatisch gespeichert und beim Start gelesen.
+# Du kannst sie auch von Hand ändern – aber nur, solange das Programm geschlossen ist,
+# sonst wird deine Änderung beim nächsten automatischen Speichern überschrieben.
+# Format:  schlüssel = wert      (Ja/Nein-Werte: ja oder nein)
+#
+# kanalliste            Textdatei mit den Twitch-Kanälen (im Programmordner oder voller Pfad)
+# muster                Suchmuster als Beispielcode: Buchstabe/Ziffer = beliebiges Zeichen (A-Z, 0-9),
+#                       # = nur Ziffer, ? = nur Buchstabe, alles andere (z. B. -) muss genau so vorkommen
+# regex_modus           ja = stattdessen 'regex_muster' (regulärer Ausdruck) verwenden
+# tondatei              Audiodatei für den Alarm (mp3/wav; im Programmordner oder voller Pfad)
+# ton                   Alarm bei neuem Code abspielen
+# automatisch_kopieren  neuesten Code sofort in die Zwischenablage legen
+# chat_loggen           kompletten Chat in twitch_chatlog.txt mitschreiben
+
+kanalliste = kanaele.txt
+muster = XXXX-XXXX-XXXXX-XXXX-XXXX
+regex_modus = nein
+regex_muster = [A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{5}-[A-Z0-9]{4}-[A-Z0-9]{4}
+automatisch_kopieren = ja
+ton = ja
+tondatei = alarm.mp3
+immer_im_vordergrund = ja
+chat_loggen = ja
+fenstergroesse = 797x760
